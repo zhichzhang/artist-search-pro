@@ -1,6 +1,6 @@
 # Artist Search Pro
 
-> 为了避免可能的抄袭行为，本项目及项目网页链接将于本次大项目的截止时间西八区 2025年4月8日晚上11点59分（东八区时间 2025年4月9日下午14点59分）后上传，感谢理解。
+> 为了避免可能的抄袭行为，本项目及项目网页链接将于本次作业的截止时间西八区 2025年4月8日晚上11点59分（东八区时间 2025年4月9日下午14点59分）后上传，感谢理解。
 >
 > To prevent potential plagiarism, this project and its webpage link will be uploaded after the deadline for this assignment, which is 11:59 PM (UTC-8) on April 8, 2025, or 2:59 PM (UTC+8) on April 9, 2025. Thank you for your understanding. 
 
