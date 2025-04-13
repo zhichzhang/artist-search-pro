@@ -1,0 +1,28 @@
+<div class="container my-4" id="artist-details" *ngIf="isCardSelected">
+  <div>
+    <ul class="nav nav-tabs nav-fill" id="artist-details-tabs">
+      <li
+        class="nav-item nav-item-custom"
+        [ngClass]="{'nav-item-custom': currentSection !== 'artistInfo', 'nav-item-custom-active':  currentSection === 'artistInfo'}"
+        id="artist-info-tab"
+        (click)="onClick('artistInfo')">
+        <a class="nav-link" href="#" >Artist Info</a>
+      </li>
+      <li
+        class="nav-item nav-item-custom"
+        [ngClass]="{'nav-item-custom': currentSection !== 'artworks', 'nav-item-custom-active':  currentSection === 'artworks'}"
+        id="artworks-tab"
+        (click)="onClick('artworks')">
+        <a class="nav-link" href="#">Artworks</a>
+      </li>
+    </ul>
+  </div>
+<app-artist-info *ngIf="!isLoading && currentSection === 'artistInfo'" [artistInfo]="artistInfo"></app-artist-info>
+<div *ngIf="isLoading"  class="d-flex justify-content-center my-3" >
+  <div
+    class="spinner-border spinner-border-custom" role="status">
+  </div>
+</div>
+<app-artworks *ngIf="artworks.length > 0 && !isLoading && currentSection === 'artworks'" [artworks]="artworks"></app-artworks>
+<app-no-artworks *ngIf="artworks.length === 0 && !isLoading && currentSection === 'artworks'"></app-no-artworks>
+</div>

@@ -1,0 +1,14 @@
+<div id="result-list" class="container my-1" *ngIf = "hasSearched">
+  <div id="result-list-content" class="col-sm-6 col-md-3 col-lg-2 d-flex flex-nowrap align-items-start" *ngIf="!noResults">
+    <app-card
+      *ngFor="let searchItem of searchItems; let i = index"
+      [searchItem]="searchItem"
+      (click)="activateCard(i);"
+      (getArtistDetails)="artistDetailsReq($event)"
+      [isActivated]="activatedCardIndex === i"
+    ></app-card>
+  </div>
+  <div id="no-results-slogan" *ngIf="noResults">
+    <app-no-results></app-no-results>
+  </div>
+</div>

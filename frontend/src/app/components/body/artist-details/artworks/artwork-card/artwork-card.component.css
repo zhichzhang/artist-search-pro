@@ -1,0 +1,46 @@
+.artwork-card {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.view-categories-btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background: #ebebeb;
+  color: #000000;
+  border-radius: 0;
+}
+
+.view-categories-btn:hover {
+  text-align: center;
+  background:  #004F91;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.view-categories-btn:active {
+  text-align: center;
+  background:  #004F91;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.artwork-card-title {
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.category-modal-header-image {
+  width: 30px
+}
+
+.spinner-border-custom {
+  width: 3rem;
+  height: 3rem;
+  color: #004F91;
+}

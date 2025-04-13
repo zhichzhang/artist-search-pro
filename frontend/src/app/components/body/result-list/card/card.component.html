@@ -1,0 +1,20 @@
+<div class="card card-content d-inline-block mx-1 position-relative"
+     [ngClass]="{'card-content-custom': !isActivated, 'card-content-custom-active': isActivated}"
+     (click)="onClick()">
+
+  <div *ngIf="isLoggedIn" class="star-container position-absolute rounded-circle d-flex justify-content-center align-items-center"
+       (click)="toggleFavorite($event)">
+    <i *ngIf="isFavorite" class="bi bi-star-fill star-custom-active"></i>
+    <i *ngIf="!isFavorite" class="bi bi-star star-custom"></i>
+  </div>
+
+  <div class="ratio ratio-1x1">
+    <img [src]="searchItem.artistThumbnailHref" class="card-img-top img-fluid img-custom" [alt]="searchItem.artistName">
+  </div>
+
+  <div class="card-body justify-content-left align-content-center">
+    <h5 class="card-title text-white">{{ searchItem.artistName }}</h5>
+  </div>
+
+</div>
+

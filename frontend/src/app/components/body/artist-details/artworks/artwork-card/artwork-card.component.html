@@ -1,0 +1,38 @@
+<div class="card">
+  <img [src]="artwork.artworkThumbnailHref" class="card-img-top w-100" alt="Artwork Card Image">
+  <div class="card-body">
+    <div class="artwork-card-title w-100 text-center">
+      <div class="artwork-name">{{ artwork.artworkTitle }}, {{artwork.artworkDate}}</div>
+    </div>
+  </div>
+  <button class="btn view-categories-btn w-100 mt-2" data-bs-toggle="modal" [attr.data-bs-target]="'#' + artwork.artworkId"  (click)="onClick()">View Categories</button>
+</div>
+
+<div class="modal fade" [id]="artwork.artworkId" tabindex="-1" role="dialog" [attr.aria-labelledby]="artwork.artworkId" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="category-modal-card-image mx-2">
+          <img [src]="artwork.artworkThumbnailHref" class="category-modal-header-image" alt="Category Image">
+        </div>
+        <span>
+          <div>{{ artwork.artworkTitle }}</div>
+          <div>{{ artwork.artworkDate }}</div>
+        </span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <div class="row g-2">
+          <div class="row d-flex flex-wrap" *ngIf="!isLoading">
+            <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let category of categories">
+              <app-category-modal-card [category]="category"></app-category-modal-card>
+            </div>
+          </div>
+          <div *ngIf="isLoading" class="d-flex justify-content-center my-3">
+            <div class="spinner-border spinner-border-custom" role="status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

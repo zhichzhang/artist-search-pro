@@ -1,0 +1,31 @@
+
+
+#artist-details-tabs {
+  border: none;
+}
+
+.nav-item-custom {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+}
+
+.nav-item-custom a{
+  color: #004F91;
+}
+
+.nav-item-custom-active {
+  background-color: #004F91;
+  border: none;
+  border-radius: 10px;
+}
+
+.nav-item-custom-active a {
+  color: #FFFFFF
+}
+
+.spinner-border-custom {
+  width: 3rem;
+  height: 3rem;
+  color: #004F91;
+}

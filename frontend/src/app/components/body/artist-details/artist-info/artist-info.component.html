@@ -1,0 +1,15 @@
+<div class="container my-4" id="artist-info">
+  <h1 id="title" class="d-flex justify-content-center">
+    {{artistInfo.name}}
+    <span *ngIf="isLoggedIn" class="star-container rounded-circle d-flex justify-content-center align-items-center ms-2" (click)="toggleFavorite($event)">
+      <i *ngIf="isFavorite" class="bi bi-star-fill star-custom-active"></i>
+      <i *ngIf="!isFavorite" class="bi bi-star star-custom"></i>
+    </span>
+  </h1>
+  <h2 id="sub-title">{{ artistInfo.nationality }}, {{ artistInfo.birthday }} - {{ artistInfo.deathday }}</h2>
+  <div id="content">
+    <p class="my-3" *ngFor="let paragraph of artistInfo.biography.split('\n\n')">
+      {{ paragraph }}
+    </p>
+  </div>
+</div>

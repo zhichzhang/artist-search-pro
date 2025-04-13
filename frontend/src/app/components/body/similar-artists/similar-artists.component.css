@@ -1,0 +1,10 @@
+#similar-artists-list-content {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+}
+.row.flex-nowrap {
+  flex-wrap: nowrap;
+}

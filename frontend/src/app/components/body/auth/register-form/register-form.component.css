@@ -1,0 +1,9 @@
+.register-btn-custom {
+  background-color: #004F91;
+  color: white;
+  border: none;
+}
+
+#go-to-login-page a {
+  color: #004F91;
+}

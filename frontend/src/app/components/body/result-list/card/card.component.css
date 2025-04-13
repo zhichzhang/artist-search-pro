@@ -1,0 +1,52 @@
+.card {
+  border: lightgray 1px solid;
+}
+
+.card-content{
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 15.5rem;
+  align-content: center;
+}
+
+.card-content-custom {
+  background-color: #205375;
+}
+
+.card-content:hover {
+  background-color: #004F91;
+}
+
+.card-content-custom-active {
+  background-color: #004F91;
+}
+
+.star-container {
+  z-index: 3;
+  cursor: pointer;
+  background: #004F91;
+  width: 3rem;
+  height: 3rem;
+  top: 0.70rem;
+  right: 0.70rem;
+}
+
+.star-custom {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.star-custom-active {
+  color: #ffd700;
+  font-size: 2rem;
+}
+
+.img-custom {
+  object-fit: cover;
+}
+
+.card-title {
+  white-space: normal;
+  word-wrap: break-word;
+}

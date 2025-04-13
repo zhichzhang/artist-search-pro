@@ -1,0 +1,11 @@
+runtime: nodejs20
+env: standard
+
+entrypoint: node backend/app.js
+
+env_variables:
+  FRONTEND_URL: 'https://hw3-zhicheng-zhang.wl.r.appspot.com'
+
+handlers:
+  - url: /.*
+    script: auto

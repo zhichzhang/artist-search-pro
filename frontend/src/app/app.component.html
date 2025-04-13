@@ -1,0 +1,22 @@
+<div class="d-flex flex-column min-vh-100">
+<app-header></app-header>
+<main class="main flex-grow-1">
+  <div id="search-section" *ngIf="currentSection === 'search'">
+    <app-search-form></app-search-form>
+    <app-result-list></app-result-list>
+    <app-artist-details></app-artist-details>
+    <app-similar-artists></app-similar-artists>
+  </div>
+  <div id="login-section" *ngIf="currentSection === 'login'">
+    <app-login-form></app-login-form>
+  </div>
+  <div id="register-section" *ngIf="currentSection === 'register'">
+    <app-register-form></app-register-form>
+  </div>
+  <div id="favorites-section" *ngIf="currentSection === 'favorites'">
+    <app-favorites></app-favorites>
+  </div>
+<app-notification></app-notification>
+</main>
+<app-footer class="text-center"></app-footer>
+</div>

@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-sm-10 col-md-7 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-left fs-2 my-2 pb-3">Login</h5>
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                formControlName="email"
+                placeholder="Enter email"
+                [class.is-invalid]="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"/>
+              <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="invalid-feedback">
+                Email must be valid.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                formControlName="password"
+                placeholder="Password"
+                [class.is-invalid]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                [class.is-valid]="isSubmitted && isAuthorized"/>
+
+              <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="invalid-feedback">
+                Password is required.
+              </div>
+              <div *ngIf="isSubmitted && !isAuthorized" class="invalid-feedback-custom">
+                Password or email is incorrect.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary login-btn-custom w-100" [disabled]="loginForm.invalid || isLoading">Login</button>
+          </form>
+        </div>
+      </div>
+      <div id="go-to-register-section" class="text-center my-2">Dont have an account yet? <a (click)="goToRegisterSection()" href="#">Register</a></div>
+    </div>
+  </div>
+</div>

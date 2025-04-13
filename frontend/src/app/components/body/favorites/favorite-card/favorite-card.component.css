@@ -1,0 +1,26 @@
+.custom-card {
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bg-blur::before {
+  content: "";
+  backdrop-filter: blur(10px);
+}
+
+.favorite-card-nationality {
+}
+
+.favorite-card-interactive-timer {
+  text-align: center;
+  justify-content: center;
+}
+
+.favorite-card-title-font-size {
+  font-size: 1.8rem;
+}
+.favorite-card-content-font-size {
+  font-size: 1.2rem;
+}
+

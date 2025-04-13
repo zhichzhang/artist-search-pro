@@ -1,0 +1,41 @@
+.toast {
+  min-width: 150px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.toast-error {
+  border: 1px solid #D9C6C8;
+  background-color: #FAD8DA;
+  border-radius: 10px;
+  color: #743E47;
+}
+
+.toast-success {
+  border: 1px solid #B6CBC3;
+  background-color: #D1E7DD;
+  border-radius: 10px;
+  color: #0E2C20;
+}
+
+/*.toast-close-btn-custom {*/
+/*  color: #93A39B;*/
+/*}*/
+
+.btn-close {
+  color: gray;
+  border: none;
+}
+
+.btn-close:hover {
+  color: black;
+  border: none;
+}
+
+.btn-close:focus {
+  color: black;
+  border: none;
+}

@@ -1,0 +1,30 @@
+<div class="container my-4">
+  <div class="d-flex justify-content-center">
+    <div class="input-group my-2">
+      <input
+        type="text"
+        [(ngModel)]="q"
+        class="form-control py-2"
+        placeholder="Please enter an artist name."
+        (keydown.enter)="onSearch()"
+        [disabled]="isLoading"
+        id="search-form-input-field"
+      />
+      <button
+        class="btn search-btn-custom"
+        [disabled]="isLoading || q.trim().length === 0"
+        (click)="onSearch()"
+        id="search-form-search-button">
+        Search
+        <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-1" role="status"></span>
+      </button>
+      <button
+        class="btn clear-btn-custom"
+        [disabled]="isLoading"
+        (click)="clearQ()"
+        id="search-form-clear-button">
+        Clear
+      </button>
+    </div>
+  </div>
+</div>

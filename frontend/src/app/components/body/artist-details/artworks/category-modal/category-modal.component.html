@@ -1,0 +1,35 @@
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="category-modal-card-image mx-2">
+          <img [src]="artworkThumbnailHref" class="category-modal-header-image" alt="Category Image">
+        </div>
+        <span>
+          <div>{{ artworkName }}</div>
+          <div>{{ artworkYearOfCreation }}</div>
+        </span>
+        <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row d-flex flex-wrap">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <app-category-modal-card></app-category-modal-card>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <app-category-modal-card></app-category-modal-card>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <app-category-modal-card></app-category-modal-card>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <app-category-modal-card></app-category-modal-card>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <app-category-modal-card></app-category-modal-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

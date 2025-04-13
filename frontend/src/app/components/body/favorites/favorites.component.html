@@ -1,0 +1,16 @@
+<div class="container my-4">
+  <div *ngIf="isLoading"  class="d-flex justify-content-center my-3" >
+    <div
+      class="spinner-border spinner-border-custom" role="status">
+    </div>
+  </div>
+  <div *ngIf="!isLoading && !noFavoriteArtists" class="row g-2 my-1">
+    <div *ngFor="let favoriteItem of favoriteItems" class="col-12 col-md-6 col-lg-4">
+      <app-favorite-card [favoriteItem]="favoriteItem"></app-favorite-card>
+    </div>
+  </div>
+  <div *ngIf="!isLoading && noFavoriteArtists" class="row g-3 my-1">
+    <app-no-favorite-artists></app-no-favorite-artists>
+  </div>
+</div>
+

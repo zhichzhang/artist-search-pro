@@ -1,0 +1,22 @@
+<div class="card position-relative overflow-hidden custom-card justify-content-center mx-2" (click)="goToArtistDetailsPage()">
+  <div class="ratio ratio-16x9 bg-blur position-relative"
+       [style.background-image]="'url(' + favoriteItem.artistThumbnailHref + ')'"
+       style="background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 0;">
+
+    <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+    <div class="card-body text-white w-100 h-100"
+    style="z-index: 2">
+      <div class="position-absolute top-0 start-0 mx-3 my-3 text-white">
+        <div class="fs-3">{{ favoriteItem.artistName }}</div>
+        <div class="fs-5 mt-1">
+          <span>{{ favoriteItem.birthday }} - {{ favoriteItem.deathday }}</span>
+        </div>
+        <div class="fs-5">{{ favoriteItem.nationality }}</div>
+      </div>
+      <div class="fs-5 position-absolute bottom-0 start-0 mx-3 my-3 text-white">{{ interactiveTimer }}</div>
+      <button class="fs-5 position-absolute bottom-0 end-0 mx-3 my-2 btn btn-link bg-transparent text-white" (click)="removeReq($event)">Remove</button>
+    </div>
+  </div>
+</div>
+

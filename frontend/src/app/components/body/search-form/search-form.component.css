@@ -1,0 +1,40 @@
+#input-field {
+  background-color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.search-btn-custom {
+  background-color: #004F91;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.2rem;
+}
+
+
+.search-btn-custom-active {
+  background-color: #004F91;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.clear-btn-custom {
+  background-color: #808080;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.clear-btn-custom:hover {
+  background-color: #696969;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.clear-btn-custom:focus {
+  background-color: #696969;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.2rem;
+}

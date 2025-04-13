@@ -1,0 +1,29 @@
+#title {
+  font-size: 2rem;
+}
+
+#sub-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#content p{
+  font-size: 1.2rem;
+  text-align: justify;
+  word-wrap: break-word;
+  white-space: normal;
+  hyphens: auto;
+}
+
+.star-custom {
+  color: #000000;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.star-custom-active {
+  color: #ffd700;
+  font-size: 2rem;
+  cursor: pointer;
+}

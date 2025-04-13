@@ -1,0 +1,17 @@
+/*.result-container {*/
+/*}*/
+
+#result-list-content {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.card-content-custom {
+  background-color: #205375;
+}
+
+.card-content-custom-active {
+  background-color: #17537e;
+}

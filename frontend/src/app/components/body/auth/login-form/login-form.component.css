@@ -1,0 +1,19 @@
+.login-btn-custom {
+  background-color: #004F91;
+  color: white;
+  border: none;
+}
+
+#go-to-register-page a {
+  color: #004F91;
+}
+
+.invalid-feedback-custom {
+  color: #ff0000;
+  font-size: 0.875em;
+  margin-top: 0.25rem;
+}
+
+.invalid-feedback-custom:not(:empty) {
+  display: block;
+}
