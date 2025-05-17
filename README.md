@@ -1,4 +1,4 @@
-# Artist Search Pro (Web Applicatioon)
+# Artist Search Pro (Web Application)
 
 ## 介绍 / Intro
 
